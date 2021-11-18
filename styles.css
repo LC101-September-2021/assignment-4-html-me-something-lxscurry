@@ -1,1 +1,110 @@
-/* Write your CSS here! */
+
+
+
+body {
+    background-color:whitesmoke;
+    text-align: center;
+    display: block;
+    margin: 8px;
+}
+.header {
+    padding: 50px;
+    text-align: center;
+    background:rgb(245, 236, 212);
+    color:black;
+    font-size: 20px;
+    font-variant: small-caps;
+    font-style: normal;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+li   {
+     display:block;
+     float:left;
+     width:300px; 
+     height:90px; 
+     padding: 5px; 
+     font-size: 12px;
+     
+}
+ 
+h1 {
+    font-size: 2.8em;
+    padding: 10px 0;
+    font-weight: 800;
+    
+}
+  
+  p {
+    font-size: 1.1em;
+    font-weight: 100;
+    letter-spacing: 5px;
+  
+}  
+
+
+.container {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    padding-top: 10px;
+  }
+  
+  .image {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    width: 600px;
+    height: 600px;
+    border-radius: 8px;
+    margin-left: 70%;
+    margin-right: auto;
+    border: 3px solid black;
+}
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    width: 600px;
+    height: 600px;
+    border-radius: 8px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(245, 236, 212);
+    padding-top: 10px;
+    margin-left: 70%;
+    margin-right: auto;
+    border: 3px solid #555;
+}
+  
+  .container:hover .overlay {
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    width: 600px;
+    height: 575px;
+    border-radius: 8px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+  }
+  
+  .text {
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
